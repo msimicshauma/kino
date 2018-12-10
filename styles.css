@@ -1,0 +1,79 @@
+* {
+  user-select: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #272727;
+  font-family: "Roboto", sans-serif;
+}
+
+#root {
+  position: relative;
+}
+
+#results {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: space-around;
+}
+
+#results .draw-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#results .draw-container .numbers-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-shadow: 0px 0px 3px 2px #ff652f;
+  margin: 15px 15px;
+  padding: 15px 0;
+  text-align: center;
+  height: 200px;
+  width: 300px;
+}
+
+#results .draw-container .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: bold;
+  color: #14a76c;
+  box-shadow: 0px 0px 3px 2px #ff652f;
+  padding: 15px 0;
+  height: 200px;
+  width: 300px;
+  text-align: center;
+}
+
+#results .draw-container .numbers-container .number {
+  color: #14a76c;
+  font-weight: bold;
+  flex-basis: 21%;
+  text-align: center;
+  font-size: 18px;
+}
+
+#results .draw-container .info .draw-info {
+  color: #ff652f;
+}
+
+i {
+  color: #14a76c;
+  font-size: 40px;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+}
